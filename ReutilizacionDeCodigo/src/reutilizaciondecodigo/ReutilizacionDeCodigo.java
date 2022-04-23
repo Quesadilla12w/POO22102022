@@ -4,9 +4,13 @@
  */
 package reutilizaciondecodigo;
 
+import ico.fes.componentes.Monitor;
 import ico.fes.componentes.Mouse;
 import ico.fes.componentes.Procesador;
 import ico.fes.equipos.Computadoras;
+import ico.fes.herencia.Alumno;
+import ico.fes.herencia.polimorfismo.Animal;
+import ico.fes.herencia.polimorfismo.Perro;
 import ico.fes.iu.MiVentana;
 
 /**
@@ -35,9 +39,35 @@ public class ReutilizacionDeCodigo {
         raton.setMarca("Logitech");
         compu.setRaton(raton);
         compu.getRaton().setModelo("GS400");
+        
+        
+        Monitor pantalla = new Monitor();
+        pantalla.setMarca("Samsung");
+        pantalla.setPulgadas(45.0f);
+        pantalla.setTipo("LED");
+        compu.setPantalla(pantalla);
+        
+        compu.getPantalla().setMarca("LG");
         System.out.println(compu);
-         
+        
+        System.out.println("--------Herencia------------");
+        Alumno  alu1 = new Alumno();
+        alu1.setNombre("Jose");
+        System.out.println(alu1);
+        
+        Alumno alu2 = new Alumno("121212-5","Derecho",2,"Mario",20);
+        System.out.println(alu2);
+               
+        System.out.println("---Polimorfismo---");
+        Animal animal1= new Animal(4);
+        Perro animal2= new Perro("Poddle",4);
+        
+        animal1.hablar();
+        animal2.hablar();
+        animal2.hablar(10);
+
     }
+    
     
     
 }

@@ -36,6 +36,9 @@ public class TAREAUML {
         libro.setNombreDeLaEditorial(edito);
         libro.getNombreDeLaEditorial().setAñoDePublicacion(1990);
         System.out.println(libro);
+        //Monitor marca marca samsumg,pulggadas 45 y LED
+        
+        
         
       
     }

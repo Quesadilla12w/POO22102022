@@ -68,6 +68,9 @@ public class CuentaHabiente {
                 ;}
                 else {Cliente +="premium";
             }
+                CuentaHabiente Cuenta1 = new CuentaHabiente();
+                Cuenta1.setBalance(500);
+                System.out.println("hola perro");
 return Cliente;}
     
 }

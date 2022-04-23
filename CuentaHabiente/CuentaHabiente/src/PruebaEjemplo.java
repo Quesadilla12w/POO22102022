@@ -10,15 +10,11 @@
  *
  * @author dante
  */
-public class PruebaEjemplo extends cuentahabiente.CuentaHabiente {
+public class PruebaEjemplo {
 
     public PruebaEjemplo() {
     }
 
-    @Override
-    public String EvaluarNivelCliente() {
-        return super.EvaluarNivelCliente(); 
-    }
     
     public static void main(String[] args){
     float[] CuentasHabientes = {65000,45000,80000,30000,100000};
